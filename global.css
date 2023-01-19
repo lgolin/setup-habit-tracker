@@ -19,6 +19,9 @@ header {
   justify-content: space-between;
 
   padding: 48px;
+
+  position: fixed;
+  width: 100%;
 }
 
 button {
@@ -36,12 +39,20 @@ button {
   font-weight: 600;
   font-size: 1rem;
   line-height: 125%;
+
+  opacity: 0.7;
+}
+
+button:hover {
+  opacity: 1;
+  cursor: pointer;
 }
 
 form {
   display: flex;
 
-  padding: 48px;
+  padding: 182px 48px 48px;
+  width: fit-content;
 }
 
 .habits {
@@ -103,4 +114,10 @@ input {
 input:checked {
   background: #8b5cf6;
   border: 2px solid #a78bfa;
+}
+
+@media (max-width: 570px) {
+  button div {
+    display: none;
+  }
 }
